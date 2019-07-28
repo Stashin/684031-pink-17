@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="#" alt="Логотип приложения">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">фотография</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="intro-index">
+      <p class="intro-index__slogan">Взгляните на жизнь иначе!</p>
+      <a href="#" class="intro-index__app">Скачать приложение</a>
+      <div class="intro-index__app app">
+        <ul class="app__list">
+          <li class="app__item">
+            <a href="#" class="app__link">Скачать на ios</a>
+          </li>
+          <li class="app__item">
+            <a href="#" class="app__link">Скачать на androind</a>
+          </li>
+          <li class="app__item">
+            <a href="#" class="app__link">Скачать на windows</a>
+          </li>
+        </ul>
+      </div>
+      <p class="intro-index__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <p class="advantages__question">Устали от серости мегаполиса?</p>
+      <p class="advantages__answer">Нам есть, что вам предложить!</p>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--mood">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="advantages__item advantages__item--world">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
+        </li>
+        <li class="advantages__item advantages__item--friends">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="effect">
+      <h3 class="effect-title">Эффект на 24 часа!</h3>
+      <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от
+        использования приложения длится целые сутки!</p>
+      <a href="#" class="effect-link">Узнать больше об исследовании</a>
+    </section>
+    <section class="feedback">
+      <div class="feedback__wrapper slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <ul class="feedback__list slider__list">
+          <li class="feedback__item slider__item">
+            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+            <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
+            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+          </li>
+          <li class="feedback__item slider__item">
+            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+            <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
+            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+          </li>
+          <li class="feedback__item slider__item">
+            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+            <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
+            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+          </li>
+        </ul>
+        <button class="feedback__prev" type="button">Предыдущий отзыв</button>
+        <button class="feedback__next" type="button">Следующий отзыв</button>
+        <p class="feedback__toggles slider__toggles">
+          <button class="slider-toggle" type="button">1</button>
+          <button class="slider-toggle" type="button">2</button>
+          <button class="slider-toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a href="#" class="page-footer__logo">
+      <img class="page-footer__logo-image" src="#" alt="Логотип приложения">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social-list">
+        <li class="social-item">
+          <li class="social__link social__link--twitter">Ссылка на твиттер</li>
+        </li>
+        <li class="social-item">
+          <li class="social__link social__link--fb">Ссылка на фейсбук</li>
+        </li>
+        <li class="social-item">
+          <li class="social__link social__link--youtube">Ссылка на ютуб</li>
+        </li>
+      </ul>
+    </div>
+    <a href="" class="page-footer__developers developers">
+      <p class="developers-text">Разработано</p>
+      <img src="#" alt="Логотип HTML Academy">
+    </a>
+  </footer>
+</body>
+
 </html>
