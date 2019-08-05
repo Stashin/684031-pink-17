@@ -1,0 +1,17 @@
+.panorama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.panorama__title {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: #d22856;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 0;
+}
