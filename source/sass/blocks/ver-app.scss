@@ -1,0 +1,45 @@
+.ver-app {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: #f2f2f2;
+}
+
+.ver-app__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  max-width: 218px;
+  margin: 0;
+  padding: 40px 0;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.ver-app__list {
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ver-app__item {
+  padding-bottom: 45px;
+}
+
+.ver-app__item:last-child {
+  padding-bottom: 0;
+}
+
+.ver-app__label {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-left: 50px;
+  color: #283645;
+}
