@@ -1,0 +1,26 @@
+.emotion {
+  border: none;
+}
+
+.emotion__title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  max-width: 218px;
+  margin: 0;
+  padding: 40px 0 15px 0;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.emotion__text {
+  overflow: auto;
+  resize: none;
+  width: 280px;
+  height: 200px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}

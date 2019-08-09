@@ -1,0 +1,36 @@
+.feedback {
+  background-color: #ffffff;
+  color: #283645;
+  text-align: center;
+}
+
+.feedback__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.feedback__list {
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.feedback__author-name {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__author-name--top {
+  padding-bottom: 30px;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

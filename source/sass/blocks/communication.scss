@@ -1,0 +1,36 @@
+.communication {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 280px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.communication__label {
+  color: #d22856;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 22px;
+}
+
+.communication__input {
+  width: 280px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: #f6f6f6;
+  color: #283645;
+  margin-bottom: 30px;
+}
+
+.communication__input:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,32 @@
+.modal-error__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-error__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #283645;
+  margin: 0;
+  padding: 0;
+  max-width: 280px;
+}
+
+.modal-error__close {
+  display: block;
+  width: 280px;
+  border: none;
+  padding: 0;
+  background-color: #2aab6d;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
