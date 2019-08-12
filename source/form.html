@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -92,7 +94,8 @@
           <legend class="ver-app__title">С каким приложением путешествовали?</legend>
           <ul class="ver-app__list">
             <li class="ver-app__item">
-              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__group" id="ver-app__ios" checked>
+              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__group" id="ver-app__ios"
+                checked>
               <label for="ver-app__ios">Pink для iOS</label>
             </li>
             <li class="ver-app__item">
@@ -108,7 +111,8 @@
         </fieldset>
         <fieldset class="forms__emotions emotion">
           <legend class="emotion__title">Опишите свои эмоции</legend>
-          <textarea class="emotion__text" name="emotion__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="emotion__text" name="emotion__text"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="forms__submit" type="submit">Отправить форму</button>
         <p class="forms__text-condition"><sup>*</sup> — обязательные поля</p>

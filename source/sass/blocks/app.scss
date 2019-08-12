@@ -6,3 +6,17 @@
   align-content: center;
   justify-content: center;
 }
+
+.app__list {
+  height: 110px;
+}
+
+@media (min-width: $tablet-width) {
+  .app {
+    background: none;
+  }
+
+  .app__list {
+    height: 138px;
+  }
+}
