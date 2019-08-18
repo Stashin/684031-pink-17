@@ -6,9 +6,8 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 315px;
-  width: auto;
 }
 
 .intro-index__slogan {
@@ -25,7 +24,7 @@
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  padding: 14px 36px 17px 36px;
+  padding: 14px 35px 17px 36px;
   border: 3px solid #ffffff;
   border-radius: 35px;
   margin-top: 28px;
@@ -48,9 +47,13 @@
     height: 619px;
   }
 
+  .intro-index__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .intro-index__wrapper {
-    width: 620px;
-    margin: 0 auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -76,5 +79,30 @@
   .intro-index__availability {
     font-size: 18px;
     width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-index {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    height: 854px;
+  }
+
+  .intro-index__header {
+    padding-top: 220px;
+  }
+
+  .intro-index__slogan {
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .intro-index__app-link {
+    font-size: 21px;
+    line-height: 18px;
+    padding: 15px 28px;
+    margin-top: 53px;
   }
 }

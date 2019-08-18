@@ -4,6 +4,8 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 .panorama__title {
@@ -12,6 +14,16 @@
   font-weight: 700;
   background-color: #d22856;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 6px 20px;
   margin: 0;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__title {
+    top: 54px;
+    right: 130px;
+  }
 }

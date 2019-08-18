@@ -20,5 +20,23 @@
 
 .posts__slogan {
   padding-bottom: 50px;
-  max-width: 280px;
+  width: 280px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .posts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 45px;
+  }
+
+  .posts__slogan {
+    font-size: 18px;
+    width: 430px;
+    padding-bottom: 69px;
+  }
 }

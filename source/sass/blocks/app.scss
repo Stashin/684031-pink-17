@@ -16,7 +16,18 @@
     background: none;
   }
 
+  .intro-index__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .app__list {
     height: 138px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app__list {
+    height: 179px;
   }
 }

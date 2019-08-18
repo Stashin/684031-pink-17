@@ -10,8 +10,29 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 85px;
-  max-width: 170px;
+  padding-top: 30px;
+  padding-bottom: 83px;
   margin: 0 auto;
+  line-height: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-photo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .intro-photo__slogan {
+    font-size: 50px;
+    line-height: 59px;
+    padding-top: 71px;
+    padding-bottom: 141px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-photo__slogan {
+    padding-top: 174px;
+    width: 356px;
+    padding-bottom: 102px;
+  }
 }

@@ -2,15 +2,12 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.page-header__logo {
-  height: 70px;
+  height: 325px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 110px;
+    height: 365px;
   }
 }
 
