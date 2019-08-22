@@ -1,15 +1,9 @@
 .form {
   border: 0;
-  padding: 0;
   margin: 0;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  max-width: 280px;
-  padding-bottom: 40px;
 }
 
 .form__label {
@@ -18,13 +12,17 @@
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 22px;
+  text-align: left;
+  padding-bottom: 5px;
+  padding-top: 17px;
 }
 
 .form__input {
-  width: 280px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid #e5e5e5;
   background-color: #f6f6f6;
   color: #283645;
+  padding: 14px 0 15px 0px;
+  width: 100%;
 }

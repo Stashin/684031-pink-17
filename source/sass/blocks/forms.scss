@@ -8,27 +8,42 @@
   color: #283645;
 }
 
+.forms__profile {
+  width: 100%;
+}
+
 .forms__slogan {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   max-width: 280px;
-  padding-top: 55px;
-  padding-bottom: 50px;
+  padding-top: 45px;
+  padding-bottom: 17px;
+  margin: 0 auto;
 }
 
 .forms__submit {
   display: block;
   width: 280px;
   border: none;
-  padding: 0;
   background-color: #2aab6d;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 17px;
   margin: 0 auto;
   text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.forms__text-condition {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 55px;
 }
