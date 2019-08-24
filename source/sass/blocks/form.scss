@@ -2,8 +2,6 @@
   border: 0;
   margin: 0;
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
 }
 
 .form__label {
@@ -25,4 +23,26 @@
   color: #283645;
   padding: 14px 0 15px 0px;
   width: 100%;
+}
+
+.form__row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 6px;
+    order: 0;
+  }
+  .form__row {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 52px;
+  }
+
+  .form__label {
+    padding-left: 0;
+    padding-right: 18px;
+  }
 }

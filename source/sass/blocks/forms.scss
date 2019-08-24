@@ -10,19 +10,22 @@
 
 .forms__profile {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .forms__slogan {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  max-width: 280px;
+  width: 280px;
   padding-top: 45px;
   padding-bottom: 17px;
   margin: 0 auto;
+  color: #283645;
 }
 
-.forms__submit {
+.forms__button {
   display: block;
   width: 280px;
   border: none;
@@ -46,4 +49,45 @@
   margin: 0;
   padding-top: 35px;
   padding-bottom: 55px;
+}
+
+.forms__request {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .forms__slogan {
+    font-size: 18px;
+    width: 500px;
+    padding-top: 92px;
+    padding-bottom: 0;
+  }
+
+  .forms__request {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    margin: 0;
+    padding-bottom: 71px;
+  }
+
+  .forms__submit {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 67px;
+  }
+
+  .forms__button {
+    margin: 0;
+    width: 300px;
+  }
+
+  .forms__text-condition {
+    padding: 0;
+  }
 }

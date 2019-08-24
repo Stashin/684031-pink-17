@@ -24,3 +24,27 @@
   font-weight: 400;
   color: #283645;
 }
+
+@media (min-width: $tablet-width) {
+  .emotion {
+    order: 4;
+    border: 2px solid #e5e5e5;
+    margin-top: 57px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding-left: 58px;
+    padding-right: 66px;
+    padding-bottom: 44px;
+  }
+
+  .emotion__title {
+    padding: 0;
+    width: 260px;
+    margin-bottom: 37px;
+  }
+
+  .emotion__text {
+    height: 185px;
+  }
+}

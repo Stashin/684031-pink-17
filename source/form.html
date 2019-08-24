@@ -48,14 +48,21 @@
 
       <p class="forms__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!</p>
+      <p class="forms__request">Пожалуйста, заполните форму ниже:</p>
       <form action="https://echo.htmlacademy.ru" class="forms__profile">
         <fieldset class="forms__name form container">
-          <label class="form__label" for="form__lastname">Фамилия:</label>
-          <input class="form__input" type="text" name="lastname" value="Укажите фамилию *" id="form__lastname">
-          <label class="form__label" for="form__firstname">Имя:</label>
-          <input class="form__input" type="text" name="firstname" value="Введите ваше имя *" id="form__firstname">
-          <label class="form__label" for="form__middlename">Отчество:</label>
-          <input class="form__input" type="text" name="middlename" value="Ну и отчество тоже" id="form__middlename">
+          <div class="form__row">
+            <label class="form__label" for="form__lastname">Фамилия:</label>
+            <input class="form__input" type="text" name="lastname" value="Укажите фамилию *" id="form__lastname">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="form__firstname">Имя:</label>
+            <input class="form__input" type="text" name="firstname" value="Введите ваше имя *" id="form__firstname">
+          </div>
+          <div class="form__row">
+            <label class="form__label" for="form__middlename">Отчество:</label>
+            <input class="form__input" type="text" name="middlename" value="Ну и отчество тоже" id="form__middlename">
+          </div>
         </fieldset>
         <fieldset class="forms__progress progress container progress__container">
           <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
@@ -88,10 +95,13 @@
           </ul>
         </fieldset>
         <fieldset class="forms__communications communication container">
-          <label class="communication__label" for="user-phone">Номер телефона</label>
+          <legend class="communication__title">Контактная информация</legend>
+          <label class="communication__label-up" for="user-phone">Номер телефона</label>
           <input class="communication__input" type="tel" name="phone-num" value="Номер, пожалуйста" id="user-phone">
-          <label class="communication__label" for="user-mail">адрес почты</label>
+          <label class="communication__label-down" for="user-phone">Номер телефона</label>
+          <label class="communication__label-up" for="user-mail">адрес почты</label>
           <input class="communication__input" type="email" name="mail" value="Введите почту *" id="user-mail">
+          <label class="communication__label-down" for="user-phone">адрес почты</label>
         </fieldset>
         <fieldset class="forms__ver-app ver-app container">
           <legend class="ver-app__title">С каким приложением путешествовали?</legend>
@@ -117,8 +127,10 @@
           <textarea class="emotion__text" name="emotion__text"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="forms__submit" type="submit">Отправить форму</button>
-        <p class="forms__text-condition">* — обязательные поля</p>
+        <div class="forms__submit container">
+          <button class="forms__button" type="submit">Отправить форму</button>
+          <p class="forms__text-condition">* — обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>
