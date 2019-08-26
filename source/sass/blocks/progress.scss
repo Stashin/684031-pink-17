@@ -62,3 +62,13 @@
     padding-bottom: 52px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .progress {
+    margin: 0;
+  }
+
+  .progress__list {
+    display: flex;
+  }
+}

@@ -91,3 +91,17 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .forms__profile {
+    padding-top: 70px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+  }
+
+  .forms__slogan {
+    width: 764px;
+  }
+}

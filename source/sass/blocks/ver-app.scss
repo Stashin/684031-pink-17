@@ -63,3 +63,24 @@
     padding-left: 81px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .ver-app {
+    margin: 0;
+    padding: 0;
+    width: 431px;
+    height: 305px;
+  }
+
+  .ver-app__title {
+    width: 367px;
+  }
+
+  .ver-app__list {
+    padding-top: 51px;
+  }
+
+  .ver-app__label {
+    padding-left: 117px;
+  }
+}

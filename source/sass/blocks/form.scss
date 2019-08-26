@@ -47,3 +47,23 @@
     padding-right: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0;
+    width: 435px;
+  }
+
+  .form__row {
+    padding-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
