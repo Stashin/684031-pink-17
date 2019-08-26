@@ -48,3 +48,19 @@
     height: 185px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .emotion {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 36px;
+  }
+
+  .emotion__title {
+    margin-bottom: 34px;
+  }
+
+  .emotion__text {
+    height: 120px;
+  }
+}

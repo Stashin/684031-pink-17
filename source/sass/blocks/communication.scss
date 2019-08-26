@@ -92,6 +92,11 @@
     flex-wrap: wrap;
   }
 
+  .communication__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .communication__column {
     display: flex;
     flex-direction: column;
@@ -103,5 +108,9 @@
 
   .communication__input {
     width: 371px;
+  }
+
+  .communication__label-down:last-child {
+    padding-bottom: 13px;
   }
 }

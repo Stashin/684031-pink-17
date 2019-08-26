@@ -18,3 +18,13 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+}
