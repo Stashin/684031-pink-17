@@ -6,3 +6,28 @@
   align-content: center;
   justify-content: center;
 }
+
+.app__list {
+  height: 110px;
+}
+
+@media (min-width: $tablet-width) {
+  .app {
+    background: none;
+  }
+
+  .intro-index__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .app__list {
+    height: 138px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app__list {
+    height: 179px;
+  }
+}

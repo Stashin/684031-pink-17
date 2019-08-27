@@ -4,55 +4,63 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
+      </a>
+      <nav class="main-nav">
+        <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">фотография</a>
+            <a class="site-list__link" href="photo.html">Фотография</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">html academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
-      </div>
+    </div>
     </nav>
   </header>
 
   <main class="page-main">
     <section class="intro-index">
-      <h1 class="intro-index__slogan">Взгляните на жизнь иначе!</h1>
-      <div class="intro-index__app app">
-        <a href="#" class="intro-index__app-link">Скачать приложение</a>
-        <ul class="app__list">
-          <li class="app__item">
-            <a href="#" class="app__link">Скачать на ios</a>
-          </li>
-          <li class="app__item">
-            <a href="#" class="app__link">Скачать на androind</a>
-          </li>
-          <li class="app__item">
-            <a href="#" class="app__link">Скачать на windows</a>
-          </li>
-        </ul>
-        <p class="intro-index__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="intro-index__container container">
+        <div class="intro-index__wrapper">
+          <header class="intro-index__header">
+            <h1 class="intro-index__slogan">Взгляните на жизнь иначе!</h1>
+          </header>
+          <div class="intro-index__app app">
+            <a href="#" class="intro-index__app-link">Скачать приложение</a>
+            <ul class="app__list">
+              <li class="app__item">
+                <a href="#" class="app__link">Скачать на ios</a>
+              </li>
+              <li class="app__item">
+                <a href="#" class="app__link">Скачать на androind</a>
+              </li>
+              <li class="app__item">
+                <a href="#" class="app__link">Скачать на windows</a>
+              </li>
+            </ul>
+            <p class="intro-index__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="advantages">
@@ -61,29 +69,38 @@
         <p class="advantages__question">Устали от серости мегаполиса?</p>
         <p class="advantages__answer">Нам есть, что вам предложить!</p>
       </div>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--mood">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="advantages__item advantages__item--world">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить эффект</p>
-        </li>
-        <li class="advantages__item advantages__item--friends">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
-        </li>
-      </ul>
+      <div class="advantages__wrapper">
+        <div class="advantages__container container">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--mood">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--world">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите
+                новых</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="effect">
-      <h3 class="effect__title">Эффект на 24 часа!</h3>
-      <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от
-        использования приложения длится целые сутки!</p>
-      <a href="#" class="effect__link">Узнать больше об исследовании</a>
+      <div class="effect__container container">
+        <div class="effect__wrapper">
+          <h3 class="effect__title">Эффект на 24 часа!</h3>
+          <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от
+            использования приложения длится целые сутки!</p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+      </div>
     </section>
     <section class="feedback">
       <div class="feedback__wrapper slider">
@@ -123,24 +140,26 @@
   </main>
 
   <footer class="page-footer">
-    <a href="#" class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logo-pink-blue-desktop.svg" alt="Логотип приложения">
-    </a>
-    <ul class="social-list">
-      <li class="social-item">
-        <a class="social__link social__link--twitter">Ссылка на твиттер</a>
-      </li>
-      <li class="social-item">
-        <a class="social__link social__link--fb">Ссылка на фейсбук</a>
-      </li>
-      <li class="social-item">
-        <a class="social__link social__link--youtube">Ссылка на ютуб</a>
-      </li>
-    </ul>
-    <a href="" class="page-footer__developers developers">
-      <p class="developers__text">Разработано</p>
-      <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
-    </a>
+    <div class="page-footer__container container">
+      <a href="#" class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-desktop.svg" alt="Логотип приложения">
+      </a>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social__link social__link--twitter">Ссылка на твиттер</a>
+        </li>
+        <li class="social-item">
+          <a class="social__link social__link--fb">Ссылка на фейсбук</a>
+        </li>
+        <li class="social-item">
+          <a class="social__link social__link--youtube">Ссылка на ютуб</a>
+        </li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers developers">
+        <p class="developers__text">Разработано</p>
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+      </a>
+    </div>
   </footer>
 </body>
 

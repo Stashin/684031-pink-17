@@ -7,6 +7,7 @@ body {
   font-weight: 300;
   color: #283645;
   background-color: #ffffff;
+  min-width: 320px;
 }
 
 a {
@@ -28,4 +29,24 @@ ul {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
 }

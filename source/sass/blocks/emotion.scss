@@ -1,14 +1,14 @@
 .emotion {
   border: none;
+  padding-bottom: 41px;
 }
 
 .emotion__title {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  max-width: 218px;
   margin: 0;
-  padding: 40px 0 15px 0;
+  padding: 38px 0 16px 0;
   color: #d22856;
   text-transform: uppercase;
 }
@@ -16,11 +16,51 @@
 .emotion__text {
   overflow: auto;
   resize: none;
-  width: 280px;
-  height: 200px;
+  width: 100%;
+  height: 193px;
   border: 2px solid #e5e5e5;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .emotion {
+    order: 4;
+    border: 2px solid #e5e5e5;
+    margin-top: 57px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    padding-left: 58px;
+    padding-right: 66px;
+    padding-bottom: 44px;
+  }
+
+  .emotion__title {
+    padding: 0;
+    width: 260px;
+    margin-bottom: 37px;
+  }
+
+  .emotion__text {
+    height: 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotion {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 36px;
+  }
+
+  .emotion__title {
+    margin-bottom: 34px;
+  }
+
+  .emotion__text {
+    height: 120px;
+  }
 }

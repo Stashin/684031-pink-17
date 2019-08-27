@@ -1,7 +1,30 @@
-.page-footer {
+.page-footer__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+}
+
+.page-footer__logo {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    background-color: #ffffff;
+    display: block;
+  }
+
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
 }

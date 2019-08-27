@@ -9,6 +9,30 @@
   background-color: #ffffff;
   color: #283645;
   text-align: center;
-  max-width: 280px;
+  width: 250px;
   margin: 0 auto;
+  line-height: 30px;
+  font-weight: 400;
+  padding-top: 45px;
+  padding-bottom: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__slogan {
+    font-size: 18px;
+    width: 445px;
+    padding-top: 92px;
+    padding-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    margin-top: -110px;
+  }
+
+  .page-main__slogan {
+    width: 575px;
+    padding-bottom: 88px;
+  }
 }

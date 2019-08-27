@@ -7,11 +7,39 @@
 
 .intro-form__slogan {
   font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 85px;
-  max-width: 280px;
+  padding-top: 30px;
+  padding-bottom: 54px;
+  width: 280px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-form {
+    background-color: #1d2631;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    height: 330px;
+  }
+
+  .intro-form__slogan {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 70px;
+    width: 480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-form {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    height: 394px;
+  }
+
+  .intro-form__slogan {
+    padding-top: 173px;
+    width: 750px;
+  }
 }
