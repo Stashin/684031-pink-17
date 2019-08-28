@@ -2,7 +2,21 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 325px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 69px;
+  text-align: left;
+  align-content: center;
+  display: flex;
+  padding-left: 21px;
+  background-color: #283645;
+  border-bottom: 1px solid #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,5 +40,6 @@
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
+    position: relative;
   }
 }

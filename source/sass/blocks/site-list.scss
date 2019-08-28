@@ -1,8 +1,5 @@
 .site-list__item {
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000000;
   display: flex;
-  align-items: center;
 }
 
 .site-list__link {
@@ -11,7 +8,12 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: $desktop-width) {
