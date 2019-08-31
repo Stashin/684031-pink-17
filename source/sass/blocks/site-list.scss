@@ -20,7 +20,7 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 660px;
+    width: 620px;
   }
 
   .site-list__item {
@@ -33,5 +33,24 @@
     text-transform: none;
     line-height: 18px;
     font-weight: 400;
+    padding-top: 45px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    padding-left: 0;
+    border: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 26px;
+        left: 0;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
   }
 }

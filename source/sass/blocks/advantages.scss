@@ -28,7 +28,7 @@
 }
 
 .advantages__list {
-  padding-top: 113px;
+  padding-top: 114px;
   padding-bottom: 287px;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages__slogan {
-    padding-top: 58px;
+    padding-top: 57px;
+    padding-bottom: 26px;
   }
 
   .advantages__question {
@@ -92,7 +93,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__slogan {
-    padding-top: 83px;
+    padding-top: 84px;
   }
 
   .advantages__question {

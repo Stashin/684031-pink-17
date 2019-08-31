@@ -14,9 +14,14 @@
   color: #283645;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .developers {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developers {
     width: auto;
   }
 

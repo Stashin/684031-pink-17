@@ -20,26 +20,33 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    height: 365px;
+  .page-header__logo {
+    height: 109px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
     height: 110px;
-  }
-
-  .page-header__logo {
-    width: 170px;
   }
 
   .page-header__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
     position: relative;
+  }
+
+  .page-header__logo {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    background-color: transparent;
   }
 }

@@ -1,7 +1,7 @@
 .progress {
   border: 0;
   margin: 0;
-  padding-bottom: 43px;
+  padding-bottom: 47px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -11,21 +11,23 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  width: 436px;
+  width: 230px;
   margin: 0;
-  padding: 41px 0;
   color: #d22856;
   text-transform: uppercase;
+  position: relative;
+  top: 56px;
 }
 
 .progress__list {
   width: 280px;
   margin: 0 auto;
   text-align: left;
+  padding-top: 99px;
 }
 
 .progress__item {
-  padding-bottom: 53px;
+  padding-bottom: 52px;
 }
 
 .progress__item:last-child {
@@ -36,7 +38,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  padding-left: 50px;
+  padding-left: 52px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,17 +47,19 @@
     border: 2px solid #e5e5e5;
     margin: 0 20px;
     background-color: #ffffff;
+    padding-bottom: 43px;
   }
 
   .progress__title {
     width: 436px;
     margin-bottom: 48px;
-    padding: 0;
+    top: 0;
   }
 
   .progress__list {
     padding-left: 30px;
     margin: 0;
+    padding-top: 0;
     padding-bottom: 10px;
   }
 
@@ -89,5 +93,9 @@
 
   .progress__item:last-child {
     padding-bottom: 16px;
+  }
+
+  .progress__label {
+    padding-left: 50px;
   }
 }

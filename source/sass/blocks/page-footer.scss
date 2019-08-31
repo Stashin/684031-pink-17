@@ -11,17 +11,27 @@
   .page-footer {
     background-color: #ffffff;
     display: block;
+    margin-top: 49px;
   }
 
   .page-footer__container {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__container {
-    flex-direction: row;
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 28px;
   }
 
   .page-footer__logo {

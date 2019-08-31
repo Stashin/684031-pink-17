@@ -37,6 +37,11 @@
     line-height: 24px;
     padding-top: 10px;
     padding-right: 14px;
+    padding-bottom: 11px;
+  }
+
+  .effect__description--transfer-2 {
+    display: none;
   }
 
   .effect__link {
@@ -61,6 +66,10 @@
     width: 300px;
   }
 
+  .effect__title br {
+    display: none;
+  }
+
   .effect__wrapper {
     width: 574px;
   }
@@ -69,6 +78,15 @@
     font-size: 18px;
     line-height: 30px;
     padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  .effect__description--transfer-1 {
+    display: none;
+  }
+
+  .effect__description--transfer-2 {
+    display: inline;
   }
 
   .effect__link {
