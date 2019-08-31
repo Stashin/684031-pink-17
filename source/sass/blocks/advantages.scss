@@ -25,6 +25,19 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-position: center 0;
   background-repeat: no-repeat;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 278px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+    top: 540px;
+    transform: translateX(-50%);
+    background-position: top center;
+  }
 }
 
 .advantages__list {
@@ -59,6 +72,14 @@
   .advantages__slogan {
     padding-top: 57px;
     padding-bottom: 26px;
+  }
+
+  .advantages__wrapper:after {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    width: 270px;
+    height: 481px;
+    top: 26px;
+    left: 155px;
   }
 
   .advantages__question {

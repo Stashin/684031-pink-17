@@ -5,13 +5,13 @@
 }
 
 .feedback__wrapper {
-  max-width: 280px;
+  width: 280px;
   margin: 0 auto;
 }
 
 .feedback__list {
   margin-top: 42px;
-  margin-bottom: 45px;
+  margin-bottom: 33px;
 }
 
 .feedback__author-name {
@@ -20,11 +20,11 @@
   line-height: 30px;
   font-weight: 700;
   margin: 0;
-  padding: 0;
+  padding-bottom: 13px;
 }
 
-.feedback__author-name--top {
-  padding-bottom: 13px;
+.feedback__author-work {
+  display: none;
 }
 
 .feedback__text {
@@ -33,4 +33,52 @@
   font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+.feedback__input-1--check:checked ~ .slider__list .slider__item-1,
+.feedback__input-2--check:checked ~ .slider__list .slider__item-2,
+.feedback__input-3--check:checked ~ .slider__list .slider__item-3 {
+  display: flex;
+}
+
+.feedback__input-1--check:checked ~ .slider__control label[for="feedback-1"],
+.feedback__input-2--check:checked ~ .slider__control label[for="feedback-2"],
+.feedback__input-3--check:checked ~ .slider__control label[for="feedback-3"] {
+  background-color: transparent;
+  border: 3px solid #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    width: 630px;
+  }
+
+  .feedback__list {
+    margin-top: 21px;
+  }
+
+  .feedback__item {
+    flex-direction: column;
+  }
+
+  .feedback__author-name {
+    order: 2;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 2px;
+  }
+
+  .feedback__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .feedback__author-work {
+    display: block;
+    order: 3;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+  }
 }

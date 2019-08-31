@@ -8,7 +8,12 @@
 }
 
 .app__list {
-  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  width: 204px;
+  padding-top: 33px;
+  align-items: center;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,7 +27,8 @@
   }
 
   .app__list {
-    height: 138px;
+    padding-top: 46px;
+    padding-bottom: 28px;
   }
 }
 

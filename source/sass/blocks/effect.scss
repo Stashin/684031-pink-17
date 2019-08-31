@@ -2,6 +2,10 @@
   display: none;
 }
 
+.effect__time {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .effect {
     display: block;
@@ -14,7 +18,32 @@
 
   .effect__container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+
+  .effect__time {
+    display: block;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: 700;
+    color: #d22856;
+    margin-top: 115px;
+    margin-left: 19px;
+    border: 13px solid #d22856;
+    width: 176px;
+    height: 168px;
+    padding-top: 8px;
+    border-radius: 50%;
+    position: relative;
+
+    /* &::before {
+      position: absolute;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+    } */
   }
 
   .effect__title {

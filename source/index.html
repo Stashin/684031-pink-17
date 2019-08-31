@@ -49,13 +49,22 @@
             <a href="#" class="intro-index__app-link">Скачать приложение</a>
             <ul class="app__list">
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на ios</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на ios</span>
+                  <img src="img/logo-apple.svg" alt="ссылка на приложение в AppStore">
+                </a>
               </li>
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на androind</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на androind</span>
+                  <img src="img/logo-android.svg" alt="ссылка на приложение в Play market">
+                </a>
               </li>
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на windows</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на windows</span>
+                  <img src="img/logo-microsoft.svg" alt="ссылка на приложение в Microsoft store">
+                </a>
               </li>
             </ul>
             <p class="intro-index__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -94,9 +103,12 @@
     </section>
     <section class="effect">
       <div class="effect__container container">
+        <p class="effect__time">24</p>
         <div class="effect__wrapper">
           <h3 class="effect__title">Эффект<br> на 24 часа!</h3>
-          <p class="effect__description">Британские ученые провели исследования и доказали,<br class="effect__description--transfer-2"> что положительный эффект<br class="effect__description--transfer-1"> от
+          <p class="effect__description">Британские ученые провели исследования и доказали,<br
+              class="effect__description--transfer-2"> что положительный эффект<br
+              class="effect__description--transfer-1"> от
             использования приложения длится целые сутки!</p>
           <a href="#" class="effect__link">Узнать больше об исследовании</a>
         </div>
@@ -105,36 +117,36 @@
     <section class="feedback">
       <div class="feedback__wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
+        <input class="visually-hidden feedback__input-1--check" type="radio" id="feedback-1" name="toggle" checked="checked">
+        <input class="visually-hidden feedback__input-2--check" type="radio" id="feedback-2" name="toggle">
+        <input class="visually-hidden feedback__input-3--check" type="radio" id="feedback-3" name="toggle">
         <ul class="feedback__list slider__list">
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-1" id="slide-1">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-2" id="slide-2">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-3" id="slide-3">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
         </ul>
+        <div class="slider__control">
+          <label for="feedback-1">Первый отзыв</label>
+          <label for="feedback-2">Второй отзыв</label>
+          <label for="feedback-3">Третий отзыв</label>
+        </div>
         <button class="feedback__prev" type="button">Предыдущий отзыв</button>
         <button class="feedback__next" type="button">Следующий отзыв</button>
-        <p class="feedback__toggles slider__toggles">
-          <button class="slider-toggle" type="button">1</button>
-          <button class="slider-toggle" type="button">2</button>
-          <button class="slider-toggle" type="button">3</button>
-        </p>
       </div>
     </section>
   </main>
