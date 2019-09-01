@@ -48,6 +48,10 @@
   border: 3px solid #283645;
 }
 
+.feedback__btn {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .feedback__wrapper {
     width: 630px;
@@ -80,5 +84,63 @@
     line-height: 30px;
     font-weight: 400;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    width: 690px;
+    position: relative;
+  }
+
+  .feedback__list {
+    margin-top: 185px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      width: 81px;
+      height: 66px;
+      transform: translateX(-50%);
+      top: -112px;
+    }
+  }
+
+  .feedback__author-name {
+    font-size: 24px;
+  }
+
+  .feedback__author-work {
+    font-size: 18px;
+  }
+
+  .slider__control {
+    display: none;
+  }
+
+  .feedback__btn {
+    background-color: transparent;
+    border: none;
+    height: 42px;
+    width: 22px;
+    cursor: pointer;
+  }
+
+  .feedback__prev {
+    position: absolute;
+    top: 28px;
+    left: -125px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .feedback__next {
+    position: absolute;
+    top: 28px;
+    right: -125px;
+    background-image: url("../img/icon-review-arrow-right.svg");
   }
 }

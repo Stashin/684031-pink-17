@@ -1,4 +1,4 @@
-.page-footer {
+.page-footer--disabled {
   display: none;
 }
 
@@ -12,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer--disabled {
+    display: block;
+  }
+
   .page-footer {
     background-color: #ffffff;
     display: block;
@@ -39,6 +43,9 @@
   }
 
   .page-footer__logo {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 13px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }

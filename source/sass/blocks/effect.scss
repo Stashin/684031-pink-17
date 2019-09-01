@@ -103,6 +103,28 @@
     width: 574px;
   }
 
+  .effect__time {
+    font-size: 120px;
+    margin-top: 92px;
+    margin-left: 23px;
+    border: 17px solid #d22856;
+    width: 219px;
+    height: 193px;
+    padding-top: 27px;
+    margin-bottom: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 299px;
+      height: 346px;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      top: -86px;
+      left: -39px;
+    }
+  }
+
   .effect__description {
     font-size: 18px;
     line-height: 30px;

@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
   position: relative;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     width: 160px;
@@ -74,12 +74,15 @@
     padding-bottom: 26px;
   }
 
-  .advantages__wrapper:after {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    width: 270px;
-    height: 481px;
-    top: 26px;
-    left: 155px;
+  .advantages__wrapper {
+    &::after {
+      content: "";
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      width: 270px;
+      height: 481px;
+      top: 26px;
+      left: 155px;
+    }
   }
 
   .advantages__question {
@@ -130,7 +133,15 @@
 
   .advantages__wrapper {
     margin-top: 53px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     background-size: cover;
+    background-position: center -228px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .advantages__container {
@@ -141,7 +152,7 @@
     flex-direction: row;
     width: 98%;
     justify-content: space-between;
-    padding-top: 354px;
+    padding-top: 407px;
   }
 
   .advantages__title {
@@ -158,6 +169,46 @@
     align-items: center;
     flex-direction: column;
     width: 282px;
+    position: relative;
+  }
+
+  .advantages__item--mood {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+      width: 287px;
+      height: 303px;
+      top: -358px;
+      left: -5px;
+    }
+  }
+
+  .advantages__item--world {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      width: 287px;
+      height: 303px;
+      top: -358px;
+      left: -2px;
+    }
+  }
+
+  .advantages__item--friends {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      width: 287px;
+      height: 303px;
+      top: -358px;
+      left: -2px;
+    }
   }
 
   .advantages__description {
