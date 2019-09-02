@@ -21,9 +21,68 @@
   right: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .panorama {
+    padding-bottom: 50px;
+  }
+
+  .panorama__comment {
+    margin-top: 372px;
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .panorama__row {
+    padding-top: 24px;
+    order: 1;
+  }
+
+  .panorama__name {
+    padding-left: 27px;
+  }
+
+  .panorama__text {
+    padding-left: 27px;
+    width: 515px;
+    order: 3;
+    padding-bottom: 22px;
+  }
+
+  .panorama__like {
+    order: 2;
+    padding-top: 25px;
+    padding-right: 59px;
+    padding-bottom: 0;
+    padding-left: 0;
+
+    &::before {
+      top: 30px;
+      left: 106px;
+    }
+  }
+}
+
+
 @media (min-width: $desktop-width) {
+  .panorama__comment {
+    margin-top: 370px;  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Временная заглушка */
+    width: 940px;
+  }
+
   .panorama__title {
     top: 54px;
     right: 130px;
+  }
+
+  .panorama__text {
+    width: 870px;
+    height: auto;
+    padding-bottom: 22px;
+  }
+
+  .panorama__like {
+    padding-right: 62px;
   }
 }

@@ -1,6 +1,6 @@
 .comment {
   background-color: #f2f2f2;
-  max-width: 280px;
+  width: 280px;
   text-align: left;
 }
 
@@ -49,5 +49,44 @@
     height: 12px;
     top: 16px;
     left: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 300px;
+    margin-top: 120px;
+    /* <<<<<<<<<<<<<<<временная заглушка */
+  }
+
+  .comment__row {
+    padding-top: 24px;
+  }
+
+  .comment__name {
+    padding-left: 27px;
+  }
+
+  .comment__text {
+    padding-left: 27px;
+    width: 235px;
+    height: 50px;
+  }
+
+  .comment__like {
+    padding-top: 11px;
+    padding-left: 27px;
+    padding-bottom: 22px;
+
+    &::before {
+      left: 256px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-top: 220px;
+    /* <<<<<<<<<<<<<<<временная заглушка */
   }
 }
