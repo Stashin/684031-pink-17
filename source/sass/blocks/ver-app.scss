@@ -16,13 +16,15 @@
   font-weight: 400;
   width: 218px;
   margin: 0;
-  padding: 40px 0;
   color: #d22856;
   text-transform: uppercase;
+  position: relative;
+  top: 56px;
 }
 
 .ver-app__list {
   text-align: left;
+  padding-top: 95px;
 }
 
 .ver-app__item {
@@ -37,7 +39,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  padding-left: 50px;
+  padding-left: 53px;
   color: #283645;
 }
 
@@ -50,8 +52,8 @@
   }
 
   .ver-app__title {
-    padding: 0;
-    width: 320px;
+    width: 370px;
+    top: 0;
   }
 
   .ver-app__list {

@@ -1,12 +1,24 @@
 .intro-index {
   background-color: #1d2631;
-}
-
-.intro-index__header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
-  padding-top: 23px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 290px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    top: 176px;
+    right: 0;
+  }
+}
+
+.intro-index__header {
+  padding-top: 89px;
   padding-bottom: 315px;
 }
 
@@ -44,7 +56,17 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
     background-repeat: no-repeat;
-    height: 619px;
+    height: 729px;
+    margin-top: -111px;
+
+    &::after {
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      width: 659px;
+      height: 545px;
+      top: 184px;
+      right: 21px;
+      z-index: 1;
+    }
   }
 
   .intro-index__container {
@@ -57,11 +79,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 3;
   }
 
   .intro-index__header {
     background: none;
-    padding-top: 91px;
+    padding-top: 202px;
     padding-bottom: 0;
     width: 300px;
   }
@@ -73,7 +96,7 @@
 
   .intro-index__app-link {
     padding: 16px 45px;
-    margin-top: 29px;
+    margin-top: 28px;
   }
 
   .intro-index__availability {
@@ -88,6 +111,14 @@
     background-position: center 0;
     background-repeat: no-repeat;
     height: 854px;
+
+    &::after {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      width: 884px;
+      height: 644px;
+      top: 210px;
+      right: 170px;
+    }
   }
 
   .intro-index__header {
@@ -97,6 +128,7 @@
   .intro-index__slogan {
     font-size: 50px;
     line-height: 59px;
+    width: 238px;
   }
 
   .intro-index__app-link {

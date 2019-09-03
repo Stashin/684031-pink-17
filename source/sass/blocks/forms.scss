@@ -25,6 +25,10 @@
   color: #283645;
 }
 
+.forms__slogan span {
+  display: none;
+}
+
 .forms__button {
   display: block;
   width: 280px;
@@ -51,6 +55,10 @@
   padding-bottom: 55px;
 }
 
+.forms__text-condition span {
+  display: none;
+}
+
 .forms__request {
   display: none;
 }
@@ -60,7 +68,11 @@
     font-size: 18px;
     width: 500px;
     padding-top: 92px;
-    padding-bottom: 0;
+    padding-bottom: 71px;
+  }
+
+  .forms__slogan span {
+    display: inline;
   }
 
   .forms__request {
@@ -94,11 +106,14 @@
 
 @media (min-width: $desktop-width) {
   .forms__profile {
-    padding-top: 70px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     width: 940px;
+  }
+
+  .forms__slogan br {
+    display: none;
   }
 
   .forms__slogan {
@@ -109,5 +124,9 @@
     padding-top: 65px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .forms__text-condition span {
+    display: inline;
   }
 }

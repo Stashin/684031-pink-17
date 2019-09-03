@@ -10,22 +10,20 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
       </a>
-      <nav class="main-nav">
-        <!-- <button class="main-nav__toggle" type="button">Открыть меню</button> -->
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
+          <li class="site-list__item site-list__link--active">
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотография</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурс</a>
@@ -37,7 +35,6 @@
     </div>
     </nav>
   </header>
-
   <main class="page-main">
     <section class="intro-index">
       <div class="intro-index__container container">
@@ -49,13 +46,22 @@
             <a href="#" class="intro-index__app-link">Скачать приложение</a>
             <ul class="app__list">
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на ios</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на ios</span>
+                  <img src="img/logo-apple.svg" alt="ссылка на приложение в AppStore">
+                </a>
               </li>
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на androind</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на androind</span>
+                  <img src="img/logo-android.svg" alt="ссылка на приложение в Play market">
+                </a>
               </li>
               <li class="app__item">
-                <a href="#" class="app__link">Скачать на windows</a>
+                <a href="#" class="app__link">
+                  <span class="visually-hidden">Скачать на windows</span>
+                  <img src="img/logo-microsoft.svg" alt="ссылка на приложение в Microsoft store">
+                </a>
               </li>
             </ul>
             <p class="intro-index__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -94,9 +100,12 @@
     </section>
     <section class="effect">
       <div class="effect__container container">
+        <p class="effect__time">24</p>
         <div class="effect__wrapper">
-          <h3 class="effect__title">Эффект на 24 часа!</h3>
-          <p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от
+          <h3 class="effect__title">Эффект<br> на 24 часа!</h3>
+          <p class="effect__description">Британские ученые провели исследования и доказали,<br
+              class="effect__description--transfer-2"> что положительный эффект<br
+              class="effect__description--transfer-1"> от
             использования приложения длится целые сутки!</p>
           <a href="#" class="effect__link">Узнать больше об исследовании</a>
         </div>
@@ -105,54 +114,65 @@
     <section class="feedback">
       <div class="feedback__wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
+        <input class="visually-hidden feedback__input-1--check" type="radio" id="feedback-1" name="toggle"
+          checked="checked">
+        <input class="visually-hidden feedback__input-2--check" type="radio" id="feedback-2" name="toggle">
+        <input class="visually-hidden feedback__input-3--check" type="radio" id="feedback-3" name="toggle">
         <ul class="feedback__list slider__list">
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-1" id="slide-1">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-2" id="slide-2">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
-          <li class="feedback__item slider__item">
-            <h4 class="feedback__author-name feedback__author-name--top">Николай Петров</h4>
+          <li class="feedback__item slider__item slider__item-3" id="slide-3">
+            <h4 class="feedback__author-name">Николай Петров</h4>
             <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            <h4 class="feedback__author-name feedback__author-name--bottom">Николай Петров</h4>
-            <p class="feedback__author-work feedback__author-work--bottom">25 лет, водитель трамвая</p>
+            <p class="feedback__author-work">25 лет, водитель трамвая</p>
           </li>
         </ul>
-        <button class="feedback__prev" type="button">Предыдущий отзыв</button>
-        <button class="feedback__next" type="button">Следующий отзыв</button>
-        <p class="feedback__toggles slider__toggles">
-          <button class="slider-toggle" type="button">1</button>
-          <button class="slider-toggle" type="button">2</button>
-          <button class="slider-toggle" type="button">3</button>
-        </p>
+        <div class="slider__control">
+          <label for="feedback-1"><span class="visually-hidden">Первый отзыв</span></label>
+          <label for="feedback-2"><span class="visually-hidden">Второй отзыв</span></label>
+          <label for="feedback-3"><span class="visually-hidden">Третий отзыв</span></label>
+        </div>
+        <button class="feedback__btn feedback__prev" type="button"><span class="visually-hidden">Предыдущий
+            отзыв</span></button>
+        <button class="feedback__btn feedback__next" type="button"><span class="visually-hidden">Следующий
+            отзыв</span></button>
       </div>
     </section>
   </main>
-
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--disabled">
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-desktop.svg" alt="Логотип приложения">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
       </a>
-      <ul class="social-list">
+      <ul class="social__list">
         <li class="social-item">
-          <a class="social__link social__link--twitter">Ссылка на твиттер</a>
+          <a class="social__link social__link--twitter">
+            <span class="visually-hidden">Ссылка на твиттер</span>
+            <img src="img/icon-twitter.svg" alt="Логотип Твиттер">
+          </a>
         </li>
-        <li class="social-item">
-          <a class="social__link social__link--fb">Ссылка на фейсбук</a>
+        <li class="social__item">
+          <a class="social__link social__link--fb">
+            <span class="visually-hidden">Ссылка на фейсбук</span>
+            <img src="img/icon-facebook.svg" alt="Логотип Фейсбук">
+          </a>
         </li>
-        <li class="social-item">
-          <a class="social__link social__link--youtube">Ссылка на ютуб</a>
+        <li class="social__item">
+          <a class="social__link social__link--youtube">
+            <span class="visually-hidden">Ссылка на ютуб</span>
+            <img src="img/icon-youtube.svg" alt="Логотип YouTube">
+          </a>
         </li>
       </ul>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers developers">

@@ -4,25 +4,24 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-top: 32px;
-  padding-bottom: 40px;
+  padding-top: 27px;
+  padding-bottom: 12px;
 }
 
 .communication__title {
-  display: block;
+  display: none;
 }
 
-.communication__label-up {
+.communication__column {
+  padding-bottom: 12px;
+}
+
+.communication__label {
   color: #d22856;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 22px;
-  padding-bottom: 5px;
-}
-
-.communication__label-down {
-  display: none;
 }
 
 .communication__input {
@@ -31,9 +30,10 @@
   border: 2px solid #e5e5e5;
   background-color: #f6f6f6;
   color: #283645;
-  margin-bottom: 17px;
-  padding: 14px 0 15px 0;
+  margin-bottom: 22px;
+  padding: 14px 20px 15px 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .communication__input:last-child {
@@ -61,6 +61,22 @@
     width: 260px;
   }
 
+  .communication__column {
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .communication__column:last-child {
+    padding-bottom: 22px;
+  }
+
+  .communication__label {
+    order: 2;
+    padding-left: 19px;
+    padding-top: 4px;
+  }
+
   .communication__label-up {
     display: none;
   }
@@ -72,15 +88,10 @@
     font-weight: 400;
     text-transform: uppercase;
     padding-left: 19px;
-    padding-bottom: 29px;
   }
 
   .communication__input {
     margin-bottom: 10px;
-  }
-
-  .communication__label-down:last-child {
-    padding-bottom: 26px;
   }
 }
 
@@ -90,6 +101,7 @@
     margin-right: 0;
     margin-left: 0;
     flex-wrap: wrap;
+    margin-bottom: 57px;
   }
 
   .communication__row {
@@ -100,6 +112,12 @@
   .communication__column {
     display: flex;
     flex-direction: column;
+    padding: 0;
+  }
+
+  .communication__label {
+    padding-top: 15px;
+    line-height: 15px;
   }
 
   .communication__title {
@@ -107,7 +125,7 @@
   }
 
   .communication__input {
-    width: 371px;
+    width: 375px;
   }
 
   .communication__label-down:last-child {
