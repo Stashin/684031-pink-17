@@ -16,6 +16,17 @@
   padding-top: 12px;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #000000;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

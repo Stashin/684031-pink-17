@@ -1,8 +1,14 @@
 .intro-photo {
+  background-color: #1d2631;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
-  background-color: #2c3949;
+  position: relative;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .intro-photo__slogan {

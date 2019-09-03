@@ -10,11 +10,18 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
+        <p class="page-header__logo-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
+          </picture>
+        </p>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -45,14 +52,23 @@
       ваших?</p>
     <section class="panorama">
       <p class="panorama__title">ПАНОРАМА ДНЯ</p>
-      <img class="panorama__image" src="img/panorama-mobile@1x.jpg" width="320" height="137"
-        alt="Изображение панорамы дня">
+      <p class="panorama__image-wrapper">
+        <picture>
+          <source class="panorama__image" media="(min-width: 1200px)"
+            srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source class="panorama__image" media="(min-width: 660px)"
+            srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+            alt="Изображение панорамы дня">
+        </picture>
+      </p>
       <div class="panorama__comment comment">
         <div class="comment__row panorama__row">
           <p class="comment__name panorama__name">Анна</p>
           <p class="comment__time panorama__time">(5 минут назад)</p>
         </div>
-        <p class="comment__text panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+        <p class="comment__text panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          трансляцию в
           перископе, задавайте свои вопросы!</p>
         <p class="comment__like panorama__like">Нравится: 215</p>
       </div>
@@ -61,7 +77,16 @@
       <div class="container">
         <ul class="posts__list">
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                  alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Левон</p>
@@ -72,8 +97,16 @@
             </div>
           </li>
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Антон</p>
@@ -84,8 +117,16 @@
             </div>
           </li>
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-window-mobile@1x.jpg" width="280" height="180"
-              alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                  alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Борис</p>
@@ -96,7 +137,16 @@
             </div>
           </li>
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                  alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Сергей</p>
@@ -107,7 +157,16 @@
             </div>
           </li>
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Максим</p>
@@ -118,7 +177,16 @@
             </div>
           </li>
           <li class="posts__item post">
-            <img class="post__image" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография поста">
+            <p class="post__image-wrapper">
+              <picture>
+                <source class="post__image" media="(min-width: 1200px)"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source class="post__image" media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                  alt="Изображение панорамы дня">
+              </picture>
+            </p>
             <div class="post__comment comment">
               <div class="comment__row">
                 <p class="comment__name">Надежда</p>
@@ -136,7 +204,10 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
+        <picture class="page-footer__logo-image">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
+        </picture>
       </a>
       <ul class="social__list">
         <li class="social-item">

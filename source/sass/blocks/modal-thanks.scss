@@ -52,6 +52,18 @@
   text-transform: uppercase;
   margin: 48px auto 52px auto;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {

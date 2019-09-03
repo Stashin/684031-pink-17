@@ -21,13 +21,35 @@
   right: 20px;
 }
 
+.panorama__image-wrapper {
+  margin: 0;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+}
+
+.panorama__image {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .panorama {
     padding-bottom: 50px;
   }
 
+  .panorama__title {
+    top: 57px;
+  }
+
+  .panorama__image-wrapper {
+    height: 509px;
+  }
+
+  .panorama__image {
+    width: auto;
+  }
+
   .panorama__comment {
-    margin-top: 372px;
     width: 620px;
     display: flex;
     justify-content: space-between;
@@ -66,8 +88,11 @@
 
 
 @media (min-width: $desktop-width) {
+  .panorama__image-wrapper {
+    height: 506px;
+  }
+
   .panorama__comment {
-    margin-top: 370px;  /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Временная заглушка */
     width: 940px;
   }
 

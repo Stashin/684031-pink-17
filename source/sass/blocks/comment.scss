@@ -55,8 +55,6 @@
 @media (min-width: $tablet-width) {
   .comment {
     width: 300px;
-    margin-top: 120px;
-    /* <<<<<<<<<<<<<<<временная заглушка */
   }
 
   .comment__row {
@@ -81,12 +79,5 @@
     &::before {
       left: 256px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .comment {
-    margin-top: 220px;
-    /* <<<<<<<<<<<<<<<временная заглушка */
   }
 }

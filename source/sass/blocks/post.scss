@@ -1,3 +1,27 @@
+.post__image-wrapper {
+  margin: 0;
+  width: 280px;
+  height: 180px;
+}
+
 .post__image {
-  display: block;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .post__image-wrapper {
+    height: 300px;
+  }
+
+  .post__image {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__image-wrapper {
+    height: 400px;
+    width: 300px;
+  }
 }

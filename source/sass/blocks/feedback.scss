@@ -11,7 +11,7 @@
 
 .feedback__list {
   margin-top: 42px;
-  margin-bottom: 26px;
+  margin-bottom: 33px;
 }
 
 .feedback__author-name {
@@ -47,6 +47,7 @@
 .feedback__input-3--check:checked ~ .slider__control label[for="feedback-3"] {
   background-color: transparent;
   border: 3px solid #283645;
+  margin: 0 5px;
 }
 
 .feedback__btn {
