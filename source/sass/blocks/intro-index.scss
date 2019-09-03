@@ -40,6 +40,18 @@
   border: 3px solid #ffffff;
   border-radius: 35px;
   margin-top: 28px;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #d22856;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(344, 81, 82, 0.3);
+    outline: none;
+  }
 }
 
 .intro-index__availability {
