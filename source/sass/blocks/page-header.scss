@@ -22,19 +22,19 @@
   margin-left: 21px;
 }
 
-.page-header__logo picture {
-  padding-top: 22px;
+.page-header__logo-wrapper {
+  margin: 0;
+  padding-top: 21px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     height: 110px;
   }
-}
 
-.page-header__logo-wrapper {
-  margin: 0;
-  padding-top: 22px;
+  .page-header__logo-wrapper {
+    padding-top: 27px;
+  }
 }
 
 @media (min-width: $desktop-width) {

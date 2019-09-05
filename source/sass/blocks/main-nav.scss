@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-.main-nav__toggle {
+.main-nav__toggle-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -16,13 +16,8 @@
   background-color: rgba(40, 54, 69, 0);
   cursor: pointer;
   border: none;
-}
-
-.main-nav--opened .main-nav__toggle {
-  background-image: url("../img/icon-menu-cross.svg");
-  background-position-x: 17px;
-  background-position-y: 21px;
-  background-repeat: no-repeat;
+  width:23.867px;
+  height:23.867px;
 }
 
 @media (min-width: $tablet-width) {
