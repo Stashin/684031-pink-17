@@ -12,27 +12,23 @@
 </head>
 
 <body>
-  <svg style="display: none">
-    <symbol viewBox="0 0 23.867 23.867" id="icon-menu-close">
-      <path fill="#FFFFFF"
-        d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z" />
-    </symbol>
-  </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
-        <p class="page-header__logo-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
-          </picture>
-        </p>
+        <svg class="page-header__logo--mobile" width="74.426px" height="22.859px">
+          <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+        </svg>
+        <svg class="page-header__logo--tablet" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+        </svg>
+        <svg class="page-header__logo--desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button">
           <svg class="main-nav__toggle-icon" width="23.867px" height="23.867px">
-            <use xlink:href="#icon-menu-close"></use>
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>

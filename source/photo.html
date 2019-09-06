@@ -15,16 +15,23 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
-        <p class="page-header__logo-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
-          </picture>
-        </p>
+        <svg class="page-header__logo--mobile" width="74.426px" height="22.859px">
+          <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+        </svg>
+        <svg class="page-header__logo--tablet" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+        </svg>
+        <svg class="page-header__logo--desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__toggle-icon" width="23.867px" height="23.867px">
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
