@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -171,6 +171,63 @@
         </button>
       </div>
     </section>
+    <section class="price">
+      <table class="price__list">
+        <tr>
+          <th class="price__header-disabled">&nbsp;</th>
+          <th class="price__title">База<br><span>1,99 USD</span></th>
+          <th class="price__title prise__hit">Стандарт<br><span>3,99 USD</span></th>
+          <th class="price__title">Анлим<br><span>9,99 USD</span></th>
+        </tr>
+        <tr>
+          <td class="price__cell">Розовый фильтр</td>
+          <td class="price__cell price__include"><span>Розовый фильтр</span></td>
+          <td class="price__cell price__include"><span>Розовый фильтр</span></td>
+          <td class="price__cell price__include"><span>Розовый фильтр</span></td>
+        </tr>
+        <tr>
+          <td class="price__cell">Смайлики</td>
+          <td class="price__cell price__not-include"><span>Смайлики</span></td>
+          <td class="price__cell price__include"><span>Смайлики</span></td>
+          <td class="price__cell price__include"><span>Смайлики</span></td>
+        </tr>
+        <tr>
+          <td class="price__cell">Комментарии</td>
+          <td class="price__cell price__not-include"><span>Комментарии</span></td>
+          <td class="price__cell price__not-include"><span>Комментарии</span></td>
+          <td class="price__cell price__include"><span>Комментарии</span></td>
+        </tr>
+      </table>
+    </section>
+    <section class="contacts">
+      <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts__row">
+        <div class="contacts__phone phone">
+          <p class="phone__title">Звоните:</p>
+          <a class="phone__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__mail mail">
+          <p class="mail__title">Пишите:</p>
+          <a class="mail__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__address address">
+          <p class="address__title">Приезжайте в гости:</p>
+          <p class="address__link">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <p class="map__wrapper">
+        <picture>
+          <source class="map__image" media="(min-width: 1200px)"
+            srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source class="map__image" media="(min-width: 660px)"
+            srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x"
+            alt="Изображение панорамы дня">
+        </picture>
+      </p>
+    </section>
   </main>
   <footer class="page-footer page-footer--disabled">
     <div class="page-footer__container container">
@@ -210,7 +267,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/picturefill.js"></script>
+  <!-- <script src="js/picturefill.js"></script> -->
 </body>
 
 </html>
