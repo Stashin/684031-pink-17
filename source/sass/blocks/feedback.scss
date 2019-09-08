@@ -60,7 +60,7 @@
   }
 
   .feedback__list {
-    margin-top: 21px;
+    margin-top: 34px;
   }
 
   .feedback__item {
@@ -125,24 +125,45 @@
   }
 
   .feedback__btn {
+    display: block;
     background-color: transparent;
     border: none;
-    height: 42px;
-    width: 22px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      outline: none;
+    }
   }
 
   .feedback__prev {
     position: absolute;
-    top: 28px;
-    left: -125px;
-    background-image: url("../img/icon-review-arrow-left.svg");
+    top: 27px;
+    left: -131px;
   }
 
   .feedback__next {
     position: absolute;
-    top: 28px;
-    right: -125px;
-    background-image: url("../img/icon-review-arrow-right.svg");
+    top: 27px;
+    right: -130px;
+  }
+
+  .feedback__icon {
+    fill: #bec2c7;
+
+    &:hover,
+    &:focus {
+      fill: #7e868f;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.1;
+      outline: none;
+    }
   }
 }
