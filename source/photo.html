@@ -14,7 +14,7 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo--mobile" width="74.426px" height="22.859px">
           <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
         </svg>
@@ -245,13 +245,22 @@
       </ul>
       <div class="filter__column">
         <div class="filter__range-wrapper">
-          <input class="filter__crop-range" type="range" min="0" max="100" value="1">
-          <input class="filter__fill-range" type="range" min="0" max="100" value="1">
-          <input class="filter__contrast-range" type="range" min="0" max="100" value="1">
+          <div class="filter__crop">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
+          <div class="filter__fill">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
+          <div class="filter__contrast">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
         </div>
         <div class="filter__buttons">
           <button class="filter__post" type="button">Запостить</button>
-          <button class="filter__cancel" type="button">Отменить</button>
+          <button class="filter__cancel" type="button">Отмена</button>
         </div>
       </div>
     </section>

@@ -8,6 +8,15 @@
   align-items: center;
 }
 
+.developers:hover .developers__logo-image {
+  fill: #283645;
+}
+
+.developers:active .developers__logo-image {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .developers__text {
   font-size: 14px;
   line-height: 18px;
@@ -25,7 +34,8 @@
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 14px;
-    padding-top: 43px;
+    padding-top: 11px;
+    padding-bottom: 0;
   }
 }
 
