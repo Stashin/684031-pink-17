@@ -30,6 +30,10 @@
   }
 }
 
+.map__wrapper picture {
+  margin: 0 auto;
+}
+
 .map__image {
   margin-top: -426px;
 }
@@ -39,7 +43,8 @@
     height: 402px;
 
     &::before {
-      height: 96px;
+      height: 100%;
+      background-size: contain;
     }
 
     &::after {
@@ -58,7 +63,8 @@
     height: 523px;
 
     &::before {
-      height: 124px;
+      height: 100%;
+      background-size: contain;
     }
 
     &::after {
