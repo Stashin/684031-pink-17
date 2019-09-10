@@ -24,8 +24,10 @@
 .panorama__image-wrapper {
   margin: 0;
   line-height: 0;
-  width: 100%;
+  width: 320px;
   height: auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .panorama__image {
@@ -43,6 +45,10 @@
 
   .panorama__image-wrapper {
     height: 509px;
+    width: 660px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
   .panorama__image {
@@ -72,17 +78,13 @@
     padding-bottom: 22px;
   }
 
-  .panorama__like {
+  .panorama__like-wrapper {
     order: 2;
+    padding-right: 29px;
     padding-top: 25px;
-    padding-right: 59px;
     padding-bottom: 0;
-    padding-left: 0;
-
-    &::before {
-      top: 30px;
-      left: 106px;
-    }
+    width: 120px;
+    margin-right: 0;
   }
 }
 
@@ -90,6 +92,8 @@
 @media (min-width: $desktop-width) {
   .panorama__image-wrapper {
     height: 506px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .panorama__comment {
@@ -104,10 +108,18 @@
   .panorama__text {
     width: 870px;
     height: auto;
-    padding-bottom: 22px;
+    padding-bottom: 23px;
   }
 
-  .panorama__like {
-    padding-right: 62px;
+  .panorama__like-wrapper {
+    padding-right: 0;
+    width: 175px;
+    width: 151px;
+  }
+
+  .panorama__heart {
+    margin-right: 9px;
+    padding-left: 0;
+    margin-right: 32px;
   }
 }

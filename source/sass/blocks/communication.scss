@@ -34,6 +34,7 @@
   padding: 14px 20px 15px 20px;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 
   &:hover,
   &:focus {
@@ -67,8 +68,11 @@
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 37px;
     width: 260px;
+  }
+
+  .communication__row {
+    margin-top: 37px;
   }
 
   .communication__column {
@@ -117,6 +121,7 @@
   .communication__row {
     display: flex;
     justify-content: space-between;
+    margin-top: 33px;
   }
 
   .communication__column {
@@ -128,10 +133,6 @@
   .communication__label {
     padding-top: 15px;
     line-height: 15px;
-  }
-
-  .communication__title {
-    margin-bottom: 34px;
   }
 
   .communication__input {

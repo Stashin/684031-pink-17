@@ -8,6 +8,7 @@
   justify-content: center;
   padding-bottom: 46px;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .ver-app__title {
@@ -68,7 +69,7 @@
   }
 }
 
-.ver-app__input:checked + .ver-app__label::before {
+.ver-app__input:checked+.ver-app__label::before {
   content: "";
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;
@@ -117,6 +118,9 @@
 
   .ver-app__title {
     width: 367px;
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
   }
 
   .ver-app__list {
@@ -124,6 +128,10 @@
   }
 
   .ver-app__label {
-    padding-left: 117px;
+    padding-left: 132px;
+
+    &::before {
+      left: 74px;
+    }
   }
 }

@@ -1,8 +1,4 @@
-.map__wrapper {
-  margin: 0;
-  height: 219px;
-  display: flex;
-  overflow: hidden;
+.map {
   position: relative;
 
   &::before {
@@ -15,19 +11,20 @@
     width: 100%;
     height: 52px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 36px;
-    height: 36px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 131px;
-  }
+.map__wrapper {
+  margin: 0;
+  height: 219px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.map__interectiv {
+  width: 100%;
+  height: 208px;
+  border: 0;
 }
 
 .map__wrapper picture {
@@ -52,6 +49,16 @@
     }
   }
 
+  .map {
+    &::before {
+      height: 96px;
+    }
+  }
+
+  .map__interectiv {
+    height: 402px;
+  }
+
   .map__image {
     margin-top: -319px;
     margin-left: -7px;
@@ -70,6 +77,16 @@
     &::after {
       top: 302px;
     }
+  }
+
+  .map {
+    &::before {
+      height: 124px;
+    }
+  }
+
+  .map__interectiv {
+    height: 523px;
   }
 
   .map__image {

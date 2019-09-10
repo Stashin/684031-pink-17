@@ -31,25 +31,33 @@
   padding-left: 17px;
 }
 
+.comment__like-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 139px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.comment__like-wrapper--1 {
+  width: 124px;
+}
+
+.comment__like-wrapper--4 {
+  width: 145px;
+}
+
 .comment__like {
   text-transform: uppercase;
   color: #d22856;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
-  padding: 10px 0 20px 50px;
   position: relative;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    width: 13px;
-    height: 12px;
-    top: 16px;
-    left: 18px;
-  }
+.comment__heart {
+  padding-left: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,13 +79,18 @@
     height: 50px;
   }
 
-  .comment__like {
+  .comment__like-wrapper {
+    width: 240px;
+    margin: 0 auto;
     padding-top: 11px;
-    padding-left: 27px;
     padding-bottom: 22px;
+  }
 
-    &::before {
-      left: 256px;
-    }
+  .comment__like {
+    order: 1;
+  }
+
+  .comment__heart {
+    order: 2;
   }
 }
