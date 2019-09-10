@@ -12,12 +12,16 @@
   background-color: #283645;
 }
 
+.page-header__wrapper--opacity {
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
 .page-header__logo {
   height: 69px;
   text-align: left;
   align-content: center;
   display: flex;
-  background-color: #283645;
+  background-color: transparent;
   width: 74px;
   margin-left: 21px;
 }

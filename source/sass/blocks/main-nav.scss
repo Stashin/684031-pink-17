@@ -37,6 +37,10 @@
   fill: #ffffff;
 }
 
+.main-nav--close {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     top: -66px;

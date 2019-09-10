@@ -69,7 +69,7 @@
   }
 }
 
-.ver-app__input:checked + .ver-app__label::before {
+.ver-app__input:checked+.ver-app__label::before {
   content: "";
   background-image: url("../img/icon-map-marker.svg");
   background-repeat: no-repeat;

@@ -92,6 +92,8 @@
 @media (min-width: $desktop-width) {
   .panorama__image-wrapper {
     height: 506px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .panorama__comment {
@@ -113,10 +115,6 @@
     padding-right: 0;
     width: 175px;
     width: 151px;
-  }
-
-  .panorama__like {
-
   }
 
   .panorama__heart {

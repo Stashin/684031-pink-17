@@ -54,12 +54,12 @@
   .emotion__title {
     padding: 0;
     width: 260px;
-    margin-bottom: 37px;
   }
 
   .emotion__text {
     height: 193px;
     padding-right: 20px;
+    margin-top: 37px;
   }
 }
 
@@ -71,10 +71,11 @@
   }
 
   .emotion__title {
-    margin-bottom: 34px;
+    margin-bottom: 0;
   }
 
   .emotion__text {
     height: 128px;
+    margin-top: 35px;
   }
 }
