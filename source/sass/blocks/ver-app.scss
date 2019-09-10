@@ -8,6 +8,7 @@
   justify-content: center;
   padding-bottom: 46px;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .ver-app__title {
@@ -117,6 +118,9 @@
 
   .ver-app__title {
     width: 367px;
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
   }
 
   .ver-app__list {
