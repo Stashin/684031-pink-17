@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link href="css/style.min.css" rel="stylesheet">
@@ -15,13 +16,13 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
-        <svg class="page-header__logo--mobile" width="74.426px" height="22.859px">
+        <svg class="page-header__image-mobile" width="74.426px" height="22.859px">
           <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
         </svg>
-        <svg class="page-header__logo--tablet" width="146.3px" height="40.375px">
+        <svg class="page-header__image-tablet" width="146.3px" height="40.375px">
           <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
         </svg>
-        <svg class="page-header__logo--desktop" width="146.3px" height="40.375px">
+        <svg class="page-header__image-desktop" width="146.3px" height="40.375px">
           <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
         </svg>
       </a>
@@ -33,7 +34,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__link--active">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
@@ -128,10 +129,9 @@
     <section class="feedback">
       <div class="feedback__wrapper slider">
         <h2 class="visually-hidden">Отзывы</h2>
-        <input class="visually-hidden feedback__input-1--check" type="radio" id="feedback-1" name="toggle"
-          checked="checked">
-        <input class="visually-hidden feedback__input-2--check" type="radio" id="feedback-2" name="toggle">
-        <input class="visually-hidden feedback__input-3--check" type="radio" id="feedback-3" name="toggle">
+        <input class="visually-hidden feedback__input-1" type="radio" id="feedback-1" name="toggle" checked="checked">
+        <input class="visually-hidden feedback__input-2" type="radio" id="feedback-2" name="toggle">
+        <input class="visually-hidden feedback__input-3" type="radio" id="feedback-3" name="toggle">
         <ul class="feedback__list slider__list">
           <li class="feedback__item slider__item slider__item-1" id="slide-1">
             <h4 class="feedback__author-name">Николай Петров</h4>
@@ -176,7 +176,7 @@
         <tr>
           <th class="price__header-disabled">&nbsp;</th>
           <th class="price__title">База<br><span>1,99 USD</span></th>
-          <th class="price__title prise__hit">Стандарт<br><span>3,99 USD</span></th>
+          <th class="price__title price__title--hit">Стандарт<br><span>3,99 USD</span></th>
           <th class="price__title">Анлим<br><span>9,99 USD</span></th>
         </tr>
         <tr>
@@ -232,14 +232,14 @@
   <footer class="page-footer page-footer--disabled">
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
-        <svg class="page-footer__logo-image--mobile" width="146.3px" height="40.375px">
+        <svg class="page-footer__image-mobile" width="146.3px" height="40.375px">
           <use xlink:href="img/sprite.svg#logo-footer-mobile"></use>
         </svg>
-        <svg class="page-footer__logo-image--desktop" width="146.3px" height="40.375px">
+        <svg class="page-footer__image-desktop" width="146.3px" height="40.375px">
           <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
         </svg>
       </a>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social-item">
           <a class="social__link social__link--twitter">
             <span class="visually-hidden">Ссылка на твиттер</span>

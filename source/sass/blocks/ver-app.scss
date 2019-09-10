@@ -124,6 +124,10 @@
   }
 
   .ver-app__label {
-    padding-left: 117px;
+    padding-left: 132px;
+
+    &::before {
+      left: 74px;
+    }
   }
 }

@@ -22,7 +22,7 @@
   margin-left: 21px;
 }
 
-.page-header__logo--mobile {
+.page-header__image-mobile {
   fill: #ffffff;
   padding-top: 21px;
 
@@ -36,7 +36,7 @@
   }
 }
 
-.page-header__logo--tablet {
+.page-header__image-tablet {
   display: none;
   fill: #ffffff;
 
@@ -50,7 +50,7 @@
   }
 }
 
-.page-header__logo--desktop {
+.page-header__image-desktop {
   display: none;
   fill: #ffffff;
 
@@ -71,11 +71,11 @@
     padding-top: 27px;
   }
 
-  .page-header__logo--mobile {
+  .page-header__image-mobile {
     display: none;
   }
 
-  .page-header__logo--tablet {
+  .page-header__image-tablet {
     display: block;
   }
 }
@@ -107,15 +107,15 @@
     background-color: transparent;
   }
 
-  .page-header__logo--mobile {
+  .page-header__image-mobile {
     display: none;
   }
 
-  .page-header__logo--tablet {
+  .page-header__image-tablet {
     display: none;
   }
 
-  .page-header__logo--desktop {
+  .page-header__image-desktop {
     display: block;
   }
 }

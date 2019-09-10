@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 
-.page-footer__logo-image--mobile {
+.page-footer__image-mobile {
   fill: #283645;
 
   &:hover {
@@ -26,7 +26,7 @@
   }
 }
 
-.page-footer__logo-image--desktop {
+.page-footer__image-desktop {
   display: none;
   fill: #283645;
 
@@ -83,11 +83,11 @@
     margin-left: 0;
   }
 
-  .page-footer__logo-image--mobile {
+  .page-footer__image-mobile {
     display: none;
   }
 
-  .page-footer__logo-image--desktop {
+  .page-footer__image-desktop {
     display: block;
   }
 }
