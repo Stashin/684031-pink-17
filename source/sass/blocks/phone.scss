@@ -1,0 +1,49 @@
+.phone {
+  margin-bottom: 19px;
+}
+
+.phone__title {
+  font-size: 18px;
+  color: #283645;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.phone__link {
+  color: #d22856;
+  font-size: 24px;
+
+  &:hover,
+  &:focus {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+    border-bottom: 1px solid #283645;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .phone {
+    margin-left: 18px;
+  }
+
+  .phone__title {
+    padding-bottom: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone {
+    order: 1;
+    margin-left: 19px;
+  }
+
+  .phone__title {
+    padding-bottom: 26px;
+  }
+}

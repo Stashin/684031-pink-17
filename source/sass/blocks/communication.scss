@@ -34,6 +34,17 @@
   padding: 14px 20px 15px 20px;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+    outline: none;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .communication__input:last-child {

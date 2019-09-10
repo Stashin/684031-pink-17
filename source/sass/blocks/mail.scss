@@ -1,0 +1,44 @@
+.mail {
+  margin-bottom: 24px;
+}
+
+.mail__title {
+  font-size: 18px;
+  color: #283645;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.mail__link {
+  color: #d22856;
+  font-size: 24px;
+
+  &:hover,
+  &:focus {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+    border-bottom: 1px solid #283645;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .mail__title {
+    padding-bottom: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mail {
+    order: 3;
+  }
+
+  .mail__title {
+    padding-bottom: 28px;
+  }
+}

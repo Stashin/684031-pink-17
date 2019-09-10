@@ -8,6 +8,7 @@
   justify-content: center;
   padding-bottom: 46px;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .ver-app__title {
@@ -39,8 +40,44 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  padding-left: 53px;
+  padding-left: 69px;
   color: #283645;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #000000;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.ver-app__input:checked + .ver-app__label::before {
+  content: "";
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 0;
+}
+
+.ver-app__input {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,7 +99,12 @@
   }
 
   .ver-app__label {
-    padding-left: 81px;
+    padding-left: 97px;
+
+    &::before {
+      left: 39px;
+      bottom: -5px;
+    }
   }
 }
 
@@ -76,6 +118,9 @@
 
   .ver-app__title {
     width: 367px;
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
   }
 
   .ver-app__list {
@@ -83,6 +128,10 @@
   }
 
   .ver-app__label {
-    padding-left: 117px;
+    padding-left: 132px;
+
+    &::before {
+      left: 74px;
+    }
   }
 }

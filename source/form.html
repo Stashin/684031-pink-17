@@ -5,26 +5,34 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <p class="page-header__logo-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
-          </picture>
-        </p>
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__image-mobile" width="74.426px" height="22.859px">
+          <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+        </svg>
+        <svg class="page-header__image-tablet" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+        </svg>
+        <svg class="page-header__image-desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__toggle-icon" width="23.867px" height="23.867px">
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -32,15 +40,15 @@
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item site-list__link--active">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Конкурс</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
+      </nav>
     </div>
-    </nav>
   </header>
   <main class="page-main">
     <section class="intro-form">
@@ -49,32 +57,36 @@
       </div>
     </section>
     <section class="forms">
+      <h3 class="visually-hidden">Анкета конкурса</h3>
       <p class="forms__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту!<br> <span>Пожалуйста, заполните форму ниже:</span></p>
       <form action="https://echo.htmlacademy.ru" class="forms__profile">
         <fieldset class="forms__name form container">
           <div class="form__row">
             <label class="form__label" for="form__lastname">Фамилия:</label>
-            <input class="form__input" type="text" name="lastname" value="Укажите фамилию *" id="form__lastname">
+            <input class="form__input" type="text" name="lastname" placeholder="Укажите фамилию *" id="form__lastname">
           </div>
           <div class="form__row">
             <label class="form__label" for="form__firstname">Имя:</label>
-            <input class="form__input" type="text" name="firstname" value="Введите ваше имя *" id="form__firstname">
+            <input class="form__input" type="text" name="firstname" placeholder="Введите ваше имя *"
+              id="form__firstname">
           </div>
           <div class="form__row">
             <label class="form__label" for="form__middlename">Отчество:</label>
-            <input class="form__input" type="text" name="middlename" value="Ну и отчество тоже" id="form__middlename">
+            <input class="form__input" type="text" name="middlename" placeholder="Ну и отчество тоже"
+              id="form__middlename">
           </div>
         </fieldset>
         <fieldset class="forms__progress progress container progress__container">
           <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="progress__list">
             <li class="progress__item">
-              <input class="progress__input progress__selfie" type="checkbox" name="selfie" id="selfie-shark" checked>
+              <input class="progress__input progress__selfie" type="checkbox" name="selfie" id="selfie-shark"
+                checked="">
               <label class="progress__label" for="selfie-shark">Сделал селфи с акулой</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input progress__tan" type="checkbox" name="tan" id="tan" checked>
+              <input class="progress__input progress__tan" type="checkbox" name="tan" id="tan" checked="">
               <label class="progress__label" for="tan">Обгорел на пляже</label>
             </li>
             <li class="progress__item">
@@ -87,7 +99,7 @@
               <label class="progress__label" for="souvenirs">Накупил сувениров</label>
             </li>
             <li class="progress__item">
-              <input class="progress__input progress__turret" type="checkbox" name="turret" id="turret" checked>
+              <input class="progress__input progress__turret" type="checkbox" name="turret" id="turret" checked="">
               <label class="progress__label" for="turret">Удержал башню</label>
             </li>
             <li class="progress__item">
@@ -101,11 +113,12 @@
           <div class="communication__row">
             <div class="communication__column">
               <label class="communication__label" for="user-phone">Номер телефона</label>
-              <input class="communication__input" type="tel" name="phone-num" value="Номер, пожалуйста" id="user-phone">
+              <input class="communication__input" type="tel" name="phone-num" placeholder="Номер, пожалуйста"
+                id="user-phone">
             </div>
             <div class="communication__column">
               <label class="communication__label" for="user-mail">адрес почты</label>
-              <input class="communication__input" type="email" name="mail" value="Введите почту *" id="user-mail">
+              <input class="communication__input" type="email" name="mail" placeholder="Введите почту *" id="user-mail">
             </div>
           </div>
         </fieldset>
@@ -113,16 +126,16 @@
           <legend class="ver-app__title">С каким приложением путешествовали?</legend>
           <ul class="ver-app__list">
             <li class="ver-app__item">
-              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__group" id="ver-app__ios"
-                checked>
+              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__ios" id="ver-app__ios"
+                checked="">
               <label class="ver-app__label" for="ver-app__ios">Pink для iOS</label>
             </li>
             <li class="ver-app__item">
-              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__group" id="ver-app__android">
+              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__android" id="ver-app__android">
               <label class="ver-app__label" for="ver-app__android">Pink на Android</label>
             </li>
             <li class="ver-app__item">
-              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__group"
+              <input class="ver-app__input" type="radio" name="ver-app" value="ver-app__windows-phone"
                 id="ver-app__windows-phone">
               <label class="ver-app__label" for="ver-app__windows-phone">Windows Phone</label>
             </li>
@@ -143,12 +156,14 @@
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
-        <picture class="page-footer__logo-image">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
-        </picture>
+        <svg class="page-footer__image-mobile" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer-mobile"></use>
+        </svg>
+        <svg class="page-footer__image-desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+        </svg>
       </a>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social-item">
           <a class="social__link social__link--twitter">
             <span class="visually-hidden">Ссылка на твиттер</span>
@@ -170,7 +185,9 @@
       </ul>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers developers">
         <p class="developers__text">Разработано</p>
-        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+        <svg class="developers__logo-image" width="26.943px" height="34.09px">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
@@ -189,6 +206,7 @@
       <button class="modal-error__close" type="button">ок</button>
     </div>
   </section>
+  <!-- <script src="js/picturefill.js"></script> -->
 </body>
 
 </html>

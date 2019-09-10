@@ -5,6 +5,16 @@
   justify-content: space-between;
   width: 131px;
   padding-bottom: 35px;
+  align-items: center;
+}
+
+.developers:hover .developers__logo-image {
+  fill: #283645;
+}
+
+.developers:active .developers__logo-image {
+  fill: #283645;
+  opacity: 0.3;
 }
 
 .developers__text {
@@ -14,13 +24,18 @@
   color: #283645;
 }
 
+.developers__logo-image {
+  fill: #d22856;
+}
+
 @media (min-width: $tablet-width) {
   .developers {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 17px;
-    padding-top: 43px;
+    margin-left: 14px;
+    padding-top: 11px;
+    padding-bottom: 0;
   }
 }
 

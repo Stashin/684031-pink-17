@@ -5,31 +5,39 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#">
-        <p class="page-header__logo-wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения">
-          </picture>
-        </p>
+      <a class="page-header__logo" href="index.html">
+        <svg class="page-header__image-mobile" width="74.426px" height="22.859px">
+          <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+        </svg>
+        <svg class="page-header__image-tablet" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+        </svg>
+        <svg class="page-header__image-desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+        </svg>
       </a>
       <nav class="main-nav main-nav--opened">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <svg class="main-nav__toggle-icon" width="23.867px" height="23.867px">
+            <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__link--active">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
@@ -39,8 +47,8 @@
             <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
+      </nav>
     </div>
-    </nav>
   </header>
   <main class="page-main">
     <section class="intro-photo">
@@ -51,8 +59,9 @@
     <p class="page-main__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
       ваших?</p>
     <section class="panorama">
-      <p class="panorama__title">ПАНОРАМА ДНЯ</p>
-      <p class="panorama__image-wrapper">
+      <h3 class="visually-hidden">Лучшая панорама дня</h3>
+      <div class="panorama__image-wrapper">
+        <p class="panorama__title">ПАНОРАМА ДНЯ</p>
         <picture>
           <source class="panorama__image" media="(min-width: 1200px)"
             srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -61,7 +70,7 @@
           <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
             alt="Изображение панорамы дня">
         </picture>
-      </p>
+      </div>
       <div class="panorama__comment comment">
         <div class="comment__row panorama__row">
           <p class="comment__name panorama__name">Анна</p>
@@ -70,10 +79,16 @@
         <p class="comment__text panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
           трансляцию в
           перископе, задавайте свои вопросы!</p>
-        <p class="comment__like panorama__like">Нравится: 215</p>
+        <div class="comment__like-wrapper panorama__like-wrapper">
+          <a class="comment__heart panorama__heart" href="#">
+            <img src="img/icon-heart.svg" alt="Like">
+          </a>
+          <p class="comment__like panorama__like">Нравится: 215</p>
+        </div>
       </div>
     </section>
     <section class="posts">
+      <h3 class="visually-hidden">Фотографии пользователей</h3>
       <div class="container">
         <ul class="posts__list">
           <li class="posts__item post">
@@ -93,7 +108,12 @@
                 <p class="comment__time">(5 часов назад)</p>
               </div>
               <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="comment__like">Нравится: 356</p>
+              <div class="comment__like-wrapper">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 356</p>
+              </div>
             </div>
           </li>
           <li class="posts__item post">
@@ -113,7 +133,12 @@
                 <p class="comment__time">(12 часов назад)</p>
               </div>
               <p class="comment__text">Соседи будут рады!</p>
-              <p class="comment__like">Нравится: 666</p>
+              <div class="comment__like-wrapper">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 666</p>
+              </div>
             </div>
           </li>
           <li class="posts__item post">
@@ -133,7 +158,12 @@
                 <p class="comment__time"> (20 часов назад)</p>
               </div>
               <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="comment__like">Нравится: 215</p>
+              <div class="comment__like-wrapper">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 215</p>
+              </div>
             </div>
           </li>
           <li class="posts__item post">
@@ -153,7 +183,12 @@
                 <p class="comment__time"> (25 часов назад)</p>
               </div>
               <p class="comment__text">Самая кубанская в мире!</p>
-              <p class="comment__like">Нравится: 4</p>
+              <div class="comment__like-wrapper comment__like-wrapper--1">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 4</p>
+              </div>
             </div>
           </li>
           <li class="posts__item post">
@@ -173,7 +208,12 @@
                 <p class="comment__time"> (40 часов назад)</p>
               </div>
               <p class="comment__text">Где снег-то?</p>
-              <p class="comment__like">Нравится: 150</p>
+              <div class="comment__like-wrapper">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 150</p>
+              </div>
             </div>
           </li>
           <li class="posts__item post">
@@ -193,23 +233,85 @@
                 <p class="comment__time"> (45 часов назад)</p>
               </div>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
-              <p class="comment__like">Нравится: 2560</p>
+              <div class="comment__like-wrapper comment__like-wrapper--4">
+                <a class="comment__heart" href="#">
+                  <img src="img/icon-heart.svg" alt="Like">
+                </a>
+                <p class="comment__like">Нравится: 2560</p>
+              </div>
             </div>
           </li>
         </ul>
       </div>
-      <p class="posts__slogan">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="posts__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+    </section>
+    <section class="filter">
+      <p class="filter__image-wrapper">
+        <picture>
+          <source class="filter__image" media="(min-width: 1200px)"
+            srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source class="filter__image" media="(min-width: 660px)"
+            srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="filter__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+            alt="Изображение с которым работает фильтр">
+        </picture>
+      </p>
+      <ul class="filter-list">
+        <li class="filter__item">
+          <a class="filter__link" href="#">
+            <svg class="filter__image filter__image--active" width="48px" height="48px">
+              <use xlink:href="img/sprite.svg#crop"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="filter__item">
+          <a class="filter__link" href="#">
+            <svg class="filter__image" width="48px" height="48px">
+              <use xlink:href="img/sprite.svg#icon-fill"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="filter__item">
+          <a class="filter__link" href="#">
+            <svg class="filter__image" width="31.92px" height="31.92px">
+              <use xlink:href="img/sprite.svg#contrast"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="filter__column">
+        <div class="filter__range-wrapper">
+          <div class="filter__crop">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
+          <div class="filter__fill">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
+          <div class="filter__contrast">
+            <div class="filter__line"></div>
+            <div class="filter__circle"></div>
+          </div>
+        </div>
+        <div class="filter__buttons">
+          <button class="filter__post" type="button">Запостить</button>
+          <button class="filter__cancel" type="button">Отмена</button>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container">
       <a href="#" class="page-footer__logo">
-        <picture class="page-footer__logo-image">
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Логотип приложения">
-        </picture>
+        <svg class="page-footer__image-mobile" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer-mobile"></use>
+        </svg>
+        <svg class="page-footer__image-desktop" width="146.3px" height="40.375px">
+          <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+        </svg>
       </a>
-      <ul class="social__list">
+      <ul class="social">
         <li class="social-item">
           <a class="social__link social__link--twitter">
             <span class="visually-hidden">Ссылка на твиттер</span>
@@ -231,10 +333,13 @@
       </ul>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developers developers">
         <p class="developers__text">Разработано</p>
-        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+        <svg class="developers__logo-image" width="26.943px" height="34.09px">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
+  <!-- <script src="js/picturefill.js"></script> -->
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+.map__wrapper {
+  margin: 0;
+  height: 219px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 52px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 131px;
+  }
+}
+
+.map__wrapper picture {
+  margin: 0 auto;
+}
+
+.map__image {
+  margin-top: -426px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__wrapper {
+    height: 402px;
+
+    &::before {
+      height: 100%;
+      background-size: contain;
+    }
+
+    &::after {
+      top: 239px;
+    }
+  }
+
+  .map__image {
+    margin-top: -319px;
+    margin-left: -7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    height: 523px;
+
+    &::before {
+      height: 100%;
+      background-size: contain;
+    }
+
+    &::after {
+      top: 302px;
+    }
+  }
+
+  .map__image {
+    margin-top: -256px;
+    margin-left: 0;
+  }
+}
